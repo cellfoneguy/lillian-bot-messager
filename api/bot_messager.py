@@ -1,6 +1,5 @@
 from flask import Flask
-import pywebio.platform.flask 
-import webio_view 
+from pywebio.platform.flask import webio_view 
 
 
 app = Flask(__name__)
