@@ -22,11 +22,7 @@ def main():
 			botID = input('Bot ID: ')
 			recipientID = input('Recipient ID: ')
 			bot = telebot.TeleBot(botID)
-			while True:
-				if msg == 'stop':
-					break
-				else:
-					bot.send_message(recipientID, msg)
+			bot.send_message(recipientID, msg)
 	#call the home function here
 	home()
 
