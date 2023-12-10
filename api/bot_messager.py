@@ -22,6 +22,7 @@ def main():
 			botID = input('Bot ID: ')
 			recipientID = input('Recipient ID: ')
 			bot = telebot.TeleBot(botID)
+			msg = input('Message to send: ')
 			bot.send_message(recipientID, msg)
 	#call the home function here
 	home()
